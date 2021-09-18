@@ -1,0 +1,32 @@
+{
+  "name": "create-discordjs13-bot",
+  "version": "1.0.0",
+  "description": "A Simple CLI to generate discord bot projects easily!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chamanbravo/create-discordjs13-bot.git"
+  },
+  "keywords": [
+    "cda",
+    "create-discord-bot",
+    "discord.js",
+    "discord",
+    "bot",
+    "project",
+    "generator"
+  ],
+  "author": "Chaman Bravo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chamanbravo/create-discordjs13-bot/issues"
+  },
+  "homepage": "https://github.com/chamanbravo/create-discordjs13-bot#readme",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.1.5"
+  }
+}
