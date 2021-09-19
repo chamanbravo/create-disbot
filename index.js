@@ -1,6 +1,10 @@
 const inquirer = require("inquirer");
+const chalk = require("chalk");
 const child_process = require("child_process");
 const fs = require("fs-extra");
+
+const greenTxt = chalk.green;
+const boldTxt = chalk.bold;
 
 const questions = [
   {
@@ -62,17 +66,20 @@ inquirer.prompt(questions).then((answers) => {
       return;
     }
   });
-  console.log("Installing dependencies...");
+  console.log(greenTxt("\nInstalling dependencies..."));
   child_process.execSync(`cd ${projectName} && npm i`);
-  const success = `
-    Success! Created ${projectName} using create-discordjs13-bot
+  const successMsg = `
+    ${greenTxt("Success!")} Created ${boldTxt(projectName)} using create-discordjs13-bot
 
     Inside that directory you can run:
-      * npm start: Runs the bot
+      * ${greenTxt("npm start")}: Runs the bot
 
-    To start: 
-      * cd ${projectName}
-      * npm start
+    To start:
+      * ${greenTxt("cd")} ${projectName}
+      * ${greenTxt("npm start")}
+
+    ${greenTxt("Happy Coding")}
   `;
-  console.log(success);
+
+  console.log(successMsg);
 });

@@ -2,7 +2,7 @@
 
 ### 🏠 [Homepage](https://github.com/chamanbravo/create-discordjs13-bot#readme)
 
-## Install package globally
+## Install package
 
 ```sh
 $ npm i create-discordjs13-bot
