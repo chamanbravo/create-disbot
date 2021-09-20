@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 const inquirer = require("inquirer");
 const chalk = require("chalk");
 const child_process = require("child_process");
@@ -6,6 +7,7 @@ const fs = require("fs-extra");
 
 const greenTxt = chalk.green;
 const boldTxt = chalk.bold;
+const templatePath = `${__dirname}/templates/`;
 
 const questions = [
   {
@@ -61,14 +63,9 @@ inquirer.prompt(questions).then((answers) => {
   fs.writeFileSync(`${projectName}/package.json`, packageJson, "utf8");
   const env = `TOKEN = ${token}\nPREFIX = ${prefix}`;
   fs.writeFileSync(`${projectName}/.env`, env, "utf8");
-  fs.copy(`templates`, `${projectName}`, (err) => {
-    if (err) {
-      console.log("error occured while creating the files...");
-      return;
-    }
-  });
   console.log(greenTxt("\nInstalling dependencies..."));
   child_process.execSync(`cd ${projectName} && npm i`);
+
   const successMsg = `
     ${greenTxt("Success!")} Created ${boldTxt(projectName)} using create-discordjs13-bot
 
@@ -82,5 +79,12 @@ inquirer.prompt(questions).then((answers) => {
     ${greenTxt("Happy Coding")}
   `;
 
-  console.log(successMsg);
+  try {
+    fs.copySync(`${templatePath}`, `${projectName}`)
+    console.log(successMsg);
+  } catch (err) {
+    console.error(err)
+  }
+  
+
 });

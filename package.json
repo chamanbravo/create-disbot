@@ -1,14 +1,18 @@
 {
-  "name": "create-discordjs13-app",
-  "version": "1.0.6",
+  "name": "disboty",
+  "version": "1.0.2",
   "description": "A Simple CLI to generate discord app projects easily!",
-  "main": "index.js",
-  "bin": {
-    "create-discordjs13-app": "index.js"
+  "bin": "index.js",
+  "author": "Chaman Bravo",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.1.5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chamanbravo/create-discordjs13-app"
+    "url": "https://github.com/chamanbravo/create-disbot"
   },
   "keywords": [
     "cda",
@@ -19,15 +23,8 @@
     "project",
     "generator"
   ],
-  "author": "Chaman Bravo",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chamanbravo/create-discordjs13-app/issues"
+    "url": "https://github.com/chamanbravo/create-disbot/issues"
   },
-  "homepage": "https://github.com/chamanbravo/create-discordjs13-app#readme",
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "fs-extra": "^10.0.0",
-    "inquirer": "^8.1.5"
-  }
+  "homepage": "https://github.com/chamanbravo/create-disbot#readme"
 }

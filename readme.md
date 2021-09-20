@@ -1,11 +1,11 @@
 > Creates a basic discordjs-v13 app based on the discordjs.guide website
 
-### 🏠 [Homepage](https://github.com/chamanbravo/create-discordjs13-app#readme)
+### 🏠 [Homepage](https://github.com/chamanbravo/create-disbot#readme)
 
 ## Install package
 
 ```sh
-$ npm i create-discordjs13-app
+$ npx create-disbot
 ```
 
 After that you will be prompted for information like Project name, bot token, and bot prefix
