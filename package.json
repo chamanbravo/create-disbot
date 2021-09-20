@@ -4,7 +4,7 @@
   "description": "A Simple CLI to generate discord app projects easily!",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,8 @@
     "chalk": "^4.1.2",
     "fs-extra": "^10.0.0",
     "inquirer": "^8.1.5"
+  },
+  "bin": {
+    "create-discordjs13-app": "./index.js"
   }
 }
