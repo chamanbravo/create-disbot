@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const inquirer = require("inquirer");
 const chalk = require("chalk");
 const child_process = require("child_process");
