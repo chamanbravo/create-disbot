@@ -4,7 +4,7 @@
   "description": "A Simple CLI to generate discord app projects easily!",
   "main": "index.js",
   "bin": {
-    "create-discordjs13-app": "./index.js"
+    "create-discordjs13-app": "index.js"
   },
   "repository": {
     "type": "git",
