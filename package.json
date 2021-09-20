@@ -3,8 +3,8 @@
   "version": "1.0.3",
   "description": "A Simple CLI to generate discord app projects easily!",
   "main": "index.js",
-  "scripts": {
-    "create-discordjs13-app": "node index.js"
+  "bin": {
+    "create-discordjs13-app": "./index.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +25,6 @@
     "url": "https://github.com/chamanbravo/create-discordjs13-app/issues"
   },
   "homepage": "https://github.com/chamanbravo/create-discordjs13-app#readme",
-  "bin": {
-    "create-discordjs13-app": "./index.js"
-  },
   "dependencies": {
     "chalk": "^4.1.2",
     "fs-extra": "^10.0.0",
