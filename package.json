@@ -1,6 +1,6 @@
 {
   "name": "create-discordjs13-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Simple CLI to generate discord app projects easily!",
   "main": "index.js",
   "scripts": {
